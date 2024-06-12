@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         customBlue: '#1E90FF',
+        footerColor: '#232323',
       },
       screens: {
         'sm': '50px',

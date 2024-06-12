@@ -2,6 +2,17 @@ import { NavLink } from "react-router-dom";
 import TypingAnimation from "../components/textAnimation";
 
 const Home = () => {
+  const TruncateText = ({ text, length }) => {
+    const truncateText = (str, len) => {
+      return str.length > len ? str.substring(0, len) + "..." : str;
+    };
+    const truncatedText = truncateText(text, length);
+    return (
+    <p className="my-5 text-[10px] md:text-[20px]">
+      {truncatedText}
+    </p>
+  );
+  };
   const texts = ["Kingsley Mamah", "a Web Developer", "a Graphics Designer"];
   return (
     <>
@@ -20,18 +31,14 @@ const Home = () => {
           </NavLink>
         </div>
       </div>
-      <div className=" p-5 bg-white ">
-        <div className="shadow-md p-5 pb-10">
+      <div className=" p-5 bg-white grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] items-center gap-5 w-[100%]">
+        <div className="shadow-md p-5 pb-10 mb-5 w-[100%] ">
           <h2 className="text-center text-lg font-bold border-b-2 border-customBlue w-fit ">
             About
           </h2>
-          <p className="my-5 text-[10px] md:text-[20px]">
-            I am a dedicated and skilled Front-End Developer with a proven track
-            record in dveloping responsive and user-friendly web applications. I
-            have a strong background in HTML, CSS, and JavaScript. I'm always
-            looking to stay up-to-date on the latest technologies and best
-            practices...
-          </p>
+          <div className="my-5 text-[10px] md:text-[20px]">
+            <TruncateText text={'I am a dedicated and skilled Front-End Developer with a proven track record in developing responsive'} length={70}/> 
+          </div>
           <NavLink
             className={"bg-customBlue text-white p-3 rounded-md"}
             to={"about"}
@@ -39,16 +46,30 @@ const Home = () => {
             Read more
           </NavLink>
         </div>
-        <div className="shadow-md p-5 pb-10">
+        <div className="shadow-md p-5 pb-10 mb-5 ">
           <h2 className="text-center text-lg font-bold border-b-2 border-customBlue w-fit ">
             Services
           </h2>
-          <p className="my-5 text-[10px] md:text-[20px]">
-            As a dedicated front-end developer, I specialize in creating dynamic, responsive, and user-friendly web applications. My services include....
-          </p>
+          <div className="my-5 text-[10px] md:text-[20px]">
+            <TruncateText text={'As a dedicated front-end developer, I specialize in creating dynamic, responsive, and user-friendly web applications'} length={70}/>
+          </div>
           <NavLink
             className={"bg-customBlue text-white p-3 rounded-md"}
             to={"services"}
+          >
+            Read more
+          </NavLink>
+        </div>
+        <div className="shadow-md p-5 pb-10 mb-5 ">
+          <h2 className="text-center text-lg font-bold border-b-2 border-customBlue w-fit ">
+            Contact
+          </h2>
+          <div className="my-5 text-[10px] md:text-[20px]">
+            <TruncateText text={'Whether you need a new website, UI/UX design implementation, API integration, or performance optimization,'} length={70}/>
+          </div>
+          <NavLink
+            className={"bg-customBlue text-white p-3 rounded-md"}
+            to={"contact"}
           >
             Read more
           </NavLink>

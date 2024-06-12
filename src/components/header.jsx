@@ -20,7 +20,7 @@ const Header = () => {
         <button className="md:hidden " onClick={handleHarmburger}>
           {isOpen ? (
             <>
-              <FaTimes /> <div className="absolute left-0 flex flex-col justify-center  top-[50px] items-center  text-start w-full bg-custom-gradient h-80"> <div className={'flex flex-col text-center gap-5 w-fit items-center'}><NavLinks /></div></div>
+              <FaTimes /> <div className="absolute left-0 flex flex-col justify-center  top-[70px] items-center  text-start w-full bg-custom-gradient h-80"> <div className={'flex flex-col text-center gap-5 w-fit items-center'}><NavLinks /></div></div>
             </>
           ) : (
             <FaBars />
