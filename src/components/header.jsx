@@ -13,7 +13,7 @@ const Header = () => {
   };
   return (
     <div>
-        <header className="flex items-center justify-between fixed z-10 w-full text-white p-5 bg-customBlue">
+        <header className="flex items-center justify-between fixed z-10 w-full text-white px-[30px] py-5 bg-customBlue">
         <h2 className="font-bold border-b-2 border-white text-lg">
           King's T<span className="text-customRed">e</span>ch
         </h2>

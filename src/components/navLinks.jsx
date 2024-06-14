@@ -22,7 +22,7 @@ const NavLinks = () => {
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "border-b-2 border-[white ]font-bold " : "font-bold"
+            isActive ? "border-b-2 border-[white ] font-bold " : "font-bold"
           }
           to={"services"}
         >
@@ -30,7 +30,7 @@ const NavLinks = () => {
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "border-b-2 border-[white ]font-bold" : "font-bold"
+            isActive ? "border-b-2 border-[white ] font-bold" : "font-bold"
           }
           to={"contact"}
         >
