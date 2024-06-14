@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Services = () => {
   return (
-    <div className=" text-black bg-white md:h-screen p-[40px] pt-5 md:flex md:flex-col md:items-center md:justify-center gap-20">
+    <div className=" text-black bg-white h-screen p-[40px] pt-5 md:flex md:flex-col md:items-center md:justify-center gap-20">
       <h2 className="font-bold text-xl text-center border-b-2 border-customBlue w-fit">What I Offer</h2>
       <div className="md:flex gap-5">
         <div className="text-center shadow-md p-5 hover:text-customBlue">
