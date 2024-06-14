@@ -2,7 +2,7 @@ import { FaEnvelope, FaHome, FaMedium, FaPhone } from "react-icons/fa"
 
 const Contact = () => {
   return (
-    <div className="relative text-black bg-white h-screen pt-20 flex flex-col items-center justify-center text-center">
+    <div className="relative text-black bg-white h-[90vh] pt-20 flex flex-col items-center justify-center text-center">
       <h2 className="font-bold text-xl text-center border-b-2 border-customBlue w-fit">Let's Talk</h2>
       <div className="mb-10 md:flex flex-wrap">
         <div className="flex flex-col items-center shadow-md p-5 m-3">
