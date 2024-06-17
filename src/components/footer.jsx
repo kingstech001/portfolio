@@ -1,4 +1,11 @@
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -11,7 +18,10 @@ const Footer = () => {
         <a href="https://github.com/kingstech001" target="blank">
           <FaGithub />
         </a>
-        <a href="https://www.Linkedin/in/mamah-kingsleychukwuebuka-830342263" target="blank">
+        <a
+          href="https://www.Linkedin/in/mamah-kingsleychukwuebuka-830342263"
+          target="blank"
+        >
           <FaLinkedinIn />
         </a>
         <a href="https://www.instagram.com/official_kings_tech" target="blank">

@@ -30,7 +30,9 @@ const About = () => {
             I am adapt at collaborating with cross-function teams to deliver
             seamless and performant web experiences.
           </p>
-          <button className="bg-customBlue flex items-center justify-center gap-5 rounded-sm text-white text-sm font-normal w-full p-2 md:w-fit lg:w-full"><p>DOWNLOAD MY CV</p> <FaDownload /></button>
+          <button className="bg-customBlue flex items-center justify-center gap-5 rounded-sm text-white text-sm font-normal w-full p-2 md:w-fit lg:w-full">
+            <p>DOWNLOAD MY CV</p> <FaDownload />
+          </button>
         </div>
         <img
           className="md:w-[370px] md:h-[500px] rounded-sm block m-auto"

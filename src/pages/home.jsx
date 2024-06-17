@@ -7,11 +7,7 @@ const Home = () => {
       return str.length > len ? str.substring(0, len) + "..." : str;
     };
     const truncatedText = truncateText(text, length);
-    return (
-    <p className="my-5 text-[10px] md:text-[15px]">
-      {truncatedText}
-    </p>
-  );
+    return <p className="my-5 text-[10px] md:text-[15px]">{truncatedText}</p>;
   };
   const texts = ["Kingsley Mamah", "a Web Developer", "a Graphics Designer"];
   return (
@@ -26,8 +22,11 @@ const Home = () => {
               <TypingAnimation texts={texts} speed={100} />
             </span>
           </h1>
-          <NavLink className={"bg-customBlue p-3 rounded-md font-normal text-2xl"} to={"contact"}>
-            Contact Me
+          <NavLink
+            className={"bg-customBlue p-3 rounded-md font-normal text-2xl"}
+            to={"contact"}
+          >
+            Let's Talk
           </NavLink>
         </div>
       </div>
@@ -37,7 +36,12 @@ const Home = () => {
             About
           </h2>
           <div className="my-5 ">
-            <TruncateText text={'I am a dedicated and skilled Front-End Developer with a proven track record in developing responsive'} length={70}/> 
+            <TruncateText
+              text={
+                "I am a dedicated and skilled Front-End Developer with a proven track record in developing responsive"
+              }
+              length={70}
+            />
           </div>
           <NavLink
             className={"bg-customBlue text-white p-3 rounded-md"}
@@ -51,7 +55,12 @@ const Home = () => {
             Services
           </h2>
           <div className="my-5 ">
-            <TruncateText text={'As a dedicated front-end developer, I specialize in creating dynamic, responsive, and user-friendly web applications'} length={70}/>
+            <TruncateText
+              text={
+                "As a dedicated front-end developer, I specialize in creating dynamic, responsive, and user-friendly web applications"
+              }
+              length={70}
+            />
           </div>
           <NavLink
             className={"bg-customBlue text-white p-3 rounded-md"}
@@ -65,7 +74,12 @@ const Home = () => {
             Contact
           </h2>
           <div className="my-5 ">
-            <TruncateText text={'Whether you need a new website, UI/UX design implementation, API integration, or performance optimization,'} length={70}/>
+            <TruncateText
+              text={
+                "Whether you need a new website, UI/UX design implementation, API integration, or performance optimization,"
+              }
+              length={70}
+            />
           </div>
           <NavLink
             className={"bg-customBlue text-white p-3 rounded-md"}
